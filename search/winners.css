@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.navbar {
+  background-color: rgb(39, 39, 39);
+  height: 56px;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 1.6rem;
+  text-align: center;
+  padding: 22px 10px;
+  list-style: none;
+}
+
+.a-list {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+/* 
+  *********************
+  NAVIGATION BAR END 
+  ********************** */
+
+.header-div {
+  width: 100%;
+  background-color: #5dbcd2;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  list-style: none;
+  padding: 11px;
+  width: 100%;
+}
+
+.header-li:link,
+.header-li:visited {
+  padding-top: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.header-li:active,
+.header-li:hover {
+  color: blue;
+  text-decoration-line: underline;
+}
+
+.header-li-bottum:link,
+.header-li-bottum:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header-li-bottum:active,
+.header-li-bottum:hover {
+  color: white;
+  text-decoration-line: underline;
+}
+
+.header-btn-link {
+  padding: 13px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+
+  background-color: #28a745;
+  transition: 0.3s;
+}
+
+.header-btn-link:hover {
+  background-color: #157c2d;
+}
+
+/* 
+***************
+PAIRAGRAPH DIV :start
+**************** */
+
+.header-p {
+  text-align: center;
+  width: 57%;
+  margin: 0 auto;
+  line-height: 28px;
+  font-size: 15px;
+}
+.header-div-p {
+  margin: 30px;
+}
+
+.btn-div {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.btn-link-1 a {
+  padding: 8px 136px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  background-color: #28a745;
+}
+
+.btn-div-link-1:hover {
+  background-color: #157c2d;
+  transition: 0.3s;
+}
+
+.btn-link-2 a {
+  padding: 8px 200px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+
+  background-color: white;
+}
+
+.btn-div-link-2:hover {
+  background-color: rgb(243, 243, 243);
+  transition: 0.3s;
+}
+
+/* 
+***************
+FOOTER DIV :start
+**************** */
+
+.footer-div {
+  text-align: center;
+
+  line-height: 85px;
+  margin-top: 46px;
+}
+.footer-p {
+  font-size: 60px;
+  font-weight: 100;
+  color: rgb(87, 87, 87);
+  font-family: system-ui;
+}
+.footer-h3 {
+  font-size: 28px;
+  font-weight: 500;
+  color: blue;
+}
+
+/* ##########################
+    Responsive  Start
+########################## */
+
+/***************************/
+/* 944px (Smaller desktops) */
+/***************************/
+
+@media (max-width: 944px) {
+  .header-p {
+    width: 70%;
+  }
+  .btn-link-1 a {
+    padding: 6px 80px;
+  }
+  .btn-link-2 a {
+    padding: 6px 140px;
+  }
+
+  .footer-p {
+    font-size: 50px;
+  }
+  .footer-h3 {
+    font-size: 24px;
+  }
+}
+
+/***************************/
+/* BELOW 704px (Smaller Tablets) */
+/***************************/
+
+@media (max-width: 704px) {
+  .header-div-p {
+    margin: 20px;
+    line-height: 22px;
+  }
+
+  .footer-p {
+    font-size: 36px;
+  }
+  .footer-h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .header-btn-link {
+    padding: 10px 15px;
+  }
+
+  .btn-link-1 a {
+    padding: 6px 60px;
+  }
+  .btn-link-2 a {
+    padding: 6px 120px;
+  }
+}
+
+/***************************/
+/* BELOW 600px (Phone) */
+/***************************/
+
+@media (max-width: 600px) {
+  .btn-link-1 a {
+    padding: 6px 20px;
+  }
+
+  .btn-link-2 a {
+    padding: 6px 90px;
+  }
+  .footer-p {
+    font-size: 32px;
+  }
+
+  .footer-h3 {
+    font-size: 16px;
+    line-height: 10px;
+  }
+
+  .header-btn-link {
+    font-size: 12px;
+  }
+}
+/***************************/
+/* BELOW 500px (Phone) */
+/***************************/
+
+@media (max-width: 600px) {
+  .footer-p {
+    font-size: 26px;
+  }
+
+  .nav-ul {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .footer-div {
+    margin-top: 0;
+  }
+}

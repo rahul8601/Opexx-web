@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.navbar {
+  background-color: rgb(39, 39, 39);
+  height: 56px;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 1.6rem;
+  text-align: center;
+  padding: 22px 10px;
+  list-style: none;
+}
+
+.a-list {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+/* 
+*********************
+NAVIGATION BAR END 
+********************** */
+
+.header-div {
+  width: 100%;
+  background-color: #5dbcd2;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  list-style: none;
+  padding: 11px;
+  width: 100%;
+}
+
+.header-li:link,
+.header-li:visited {
+  padding-top: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.header-li:active,
+.header-li:hover {
+  color: blue;
+  text-decoration-line: underline;
+}
+
+.form-input-1 {
+  margin-top: 24px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #eae7e7;
+  width: 58%;
+  box-shadow: 0 1px 3px rgb(0 0 0);
+}
+.form-input-2 {
+  margin-top: 24px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #eae7e7;
+  box-shadow: 0 1px 3px rgb(0 0 0);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 79.4%;
+  margin: 0 auto;
+  row-gap: 24px;
+}
+
+.form-input {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #eae7e7;
+  box-shadow: 0 1px 3px rgb(0 0 0);
+  color: gray;
+}
+
+.header-li-bottum:link,
+.header-li-bottum:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header-li-bottum:active,
+.header-li-bottum:hover {
+  color: white;
+  text-decoration-line: underline;
+}
+
+.header-btn-link {
+  padding: 13px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+
+  background-color: #28a745;
+}
+
+.header-btn-link:hover {
+  background-color: #157c2d;
+}
+
+.footer-div {
+  text-align: center;
+
+  line-height: 85px;
+  margin-top: 46px;
+}
+.footer-p {
+  font-size: 60px;
+  font-weight: 100;
+  color: rgb(68, 67, 67);
+  font-family: system-ui;
+}
+.footer-h3 {
+  font-size: 28px;
+  font-weight: 500;
+  color: blue;
+}
+
+/* ##########################
+    Responsive  Start
+########################## */
+
+/***************************/
+/* BELOW 1200px ( Landscape Tablets) */
+/***************************/
+
+@media (max-width: 1200px) {
+  .form-input-1 {
+    width: 55%;
+  }
+}
+
+/***************************/
+/* BELOW 944px ( Tablets) */
+/***************************/
+
+@media (max-width: 944px) {
+  .form-input-1 {
+    width: 49%;
+  }
+
+  .footer-p {
+    font-size: 47px;
+  }
+  .footer-h3 {
+    font-size: 24px;
+  }
+}
+
+/***************************/
+/* BELOW 704px (Smaller Tablets) */
+/***************************/
+
+@media (max-width: 704px) {
+  .flex {
+    gap: 24px;
+  }
+  .form-input-1 {
+    width: 42%;
+  }
+  .footer-h3 {
+    font-size: 18px;
+  }
+}
+
+/***************************/
+/* BELOW 544px (Phone) */
+/***************************/
+
+@media (max-width: 544px) {
+  .footer-p {
+    font-size: 37px;
+    line-height: 45px;
+  }
+  .footer-h3 {
+    font-size: 16px;
+  }
+}

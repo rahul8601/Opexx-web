@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opexx-Search</title>
+    <link rel="stylesheet" href="search.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-ul">
+        <li class="nav-list">
+          <a href="/index.html" class="a-list">OPEXX</a>
+        </li>
+        <li class="nav-list">
+          <a href="/search/search.html" class="a-list">SEARCH</a>
+        </li>
+        <li class="nav-list">
+          <a href="/pricing/pricing.html" class="a-list">PRICING</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- /* 
+    *********************
+    NAVIGATION BAR END 
+    ********************** */ -->
+
+    <div class="header-div">
+      <ul class="flex">
+        <a class="header-li" href="#"><li>Live Tenders</li></a>
+        <a class="header-li" href="http://127.0.0.1:5502/search/winners.html"
+          ><li>Winners</li></a
+        >
+      </ul>
+
+      <form class="flex">
+        <input type="text" placeholder="Keyword" class="form-input-1" />
+        <input type="text" placeholder="Location" class="form-input-2" />
+      </form>
+      <form class="grid flex">
+        <input class="form-input" type="text" placeholder="Min Value" />
+        <input class="form-input" type="text" placeholder="Max Value" />
+        <input class="form-input" type="text" placeholder="Bayar Name" />
+        <input class="form-input" type="text" placeholder="CPV" />
+
+        <select class="form-input" type="text">
+          <option disabled selected value="Published">Published</option>
+          <option value="Any Time">Any Time</option>
+          <option value="Today ">Today</option>
+          <option value="Within Last 7 days">Within Last 7 days</option>
+          <option value=" Within Last 30 days">Within Last 30 days</option>
+          <option value="Custom Days ">Custom Days</option>
+        </select>
+        <!-- <input class="form-input" type="text" placeholder="Published" /> -->
+
+        <!-- <input class="form-input" type="text" placeholder="Deadline" /> -->
+        <select class="form-input" type="text">
+          <option disabled selected value="Deadline">Deadline</option>
+          <option value="Any Time">Any Time</option>
+          <option value="In The Future ">In The Future</option>
+          <option value="Within 7 days">Within 7 days</option>
+          <option value=" Within 30 days">Within 30 days</option>
+          <option value="Within a year">Within a year</option>
+          <option value="Custom Days">Custom Days</option>
+        </select>
+      </form>
+
+      <ul class="flex">
+        <a class="header-li-bottum" href="#"><li>Show More/less</li></a>
+      </ul>
+    </div>
+
+    <div class="footer-div">
+      <h1 class="footer-p">9,000,000 tenders at your fingertips.</h1>
+      <h3 class="footer-h3">
+        Start free trial for 14 days. No credit card needed.
+      </h3>
+      <a href="#" class="header-btn-link">START FREE TRAYAL</a>
+    </div>
+  </body>
+</html>

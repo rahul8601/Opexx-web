@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.navbar {
+  background-color: rgb(39, 39, 39);
+  height: 56px;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 1.6rem;
+  text-align: center;
+  padding: 22px 10px;
+  list-style: none;
+}
+
+.a-list {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.header-container {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/building-hero.jpg");
+
+  /* background-image: url(/img/building-hero.jpg); */
+  height: 100vh;
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  position: relative;
+}
+
+.inner-container {
+  position: absolute;
+  width: 58%;
+  /* height: 70%; */
+  top: 25%;
+  left: 21%;
+}
+
+.font-h1 {
+  font-size: 56px;
+  margin-bottom: 200px;
+  color: white;
+}
+
+.header-p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.header-btn-link {
+  padding: 12px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+
+  background-color: #28a745;
+}
+.header-btn-More:link,
+.header-btn-More:visited {
+  color: white;
+  text-decoration: none;
+}
+.header-btn-More:active,
+.header-btn-More:hover {
+  text-decoration: underline;
+  color: cornflowerblue;
+  transition: 0.3s;
+}
+
+.header-btn-link:hover {
+  background-color: #157c2d;
+  transition: 0.3s;
+}
+
+/* ****************************
+  HEADER hero section end
+**************************** */
+/* ****************************
+  CONTAIENR  section start
+**************************** */
+
+.section-container {
+  width: 100%;
+  /* height: 70vh; */
+  /* background-color: #b6b9b7; */
+  margin-bottom: 30px;
+}
+
+.container {
+  text-align: center;
+  font-size: 25px;
+}
+
+.container-main-h1 {
+  padding-top: 50px;
+}
+
+.container-p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.container-flex {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.fa-solid,
+.fa-regular {
+  font-size: 70px;
+  color: #044fdb;
+  padding: 32px;
+}
+
+.container-h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.container-inner-p {
+  margin-bottom: 28px;
+}
+
+.container-border-right {
+  border-right: 2px solid grey;
+  padding: 24px 76px;
+}
+.container-border-left {
+  border-left: 2px solid grey;
+  padding: 24px 76px;
+}
+
+/* ****************************
+  CONTAIENR  section end
+**************************** */
+/* ****************************
+  MAIN  section start
+**************************** */
+
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 60%;
+
+  /* padding: 36px; */
+  filter: grayscale(100%);
+}
+
+.main-h1 {
+  padding: 36px;
+  font-size: 32px;
+  font-weight: 500;
+  /* margin-bottom: 24px;  */
+}
+
+.main-section-head {
+  background-color: rgb(214, 214, 214);
+  text-align: center;
+  padding: 54px 32px;
+  /* height: 130vh; */
+}
+.img {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.main-div {
+  width: 33.2%;
+}
+
+.main-template {
+  padding: 32px 46px;
+  line-height: 31px;
+}
+
+/* .main-head-p {
+  margin-bottom: 30px;
+} */
+
+.main-section-p-1 {
+  width: 100%;
+  padding: 32px 37px;
+  /* margin-bottom: 66px; */
+  /* margin-top: 32px; */
+}
+.main-section-p-2 {
+  width: 100%;
+  padding: 46px 81px;
+  /* margin-bottom: 70px; */
+  /* margin-top: 32px; */
+}
+.main-section-p-3 {
+  width: 100%;
+  padding: 38px 54px;
+  padding-bottom: 24px;
+  /* margin-bottom: 36px; */
+  /* margin-top: 32px; */
+}
+.main-section-p {
+  margin-bottom: 30px;
+}
+
+.main-h3 {
+  color: #898989;
+}
+
+/* ****************************
+  MAIN  section end
+**************************** */
+/* ****************************
+  FOOTER section start 
+**************************** */
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-p {
+  margin-bottom: 24px;
+  line-height: 30px;
+}
+
+.footer-div {
+  width: 25%;
+}
+
+/* ****************************
+  FOOTER section end 
+**************************** */
+
+/* ##########################
+    Responsive  Start
+########################## */
+
+/***************************/
+/* 1344px (Smaller desktops) */
+/***************************/
+
+@media (max-width: 1344px) {
+  .main-section-p-2 {
+    padding: 46px 78px;
+  }
+}
+
+/***************************/
+/* BELOW 1200px ( Landscape Tablets) */
+/***************************/
+
+@media (max-width: 1200px) {
+  .main-section-p-2 {
+    padding: 46px 68px;
+  }
+  .main-section-p-3 {
+    padding: 41px 60px;
+  }
+}
+
+/***************************/
+/* BELOW 944px ( Tablets) */
+/***************************/
+
+@media (max-width: 944px) {
+  .main-section-p-2 {
+    padding: 46px 12px;
+  }
+
+  .main-section-p-1 {
+    padding: 37px 2px;
+  }
+  .main-section-p-3 {
+    padding: 45px 17px;
+  }
+}
+
+/***************************/
+/* BELOW 704px (Smaller Tablets) */
+/***************************/
+
+@media (max-width: 704px) {
+  .font-h1 {
+    font-size: 40px;
+  }
+
+  .inner-container {
+    width: 60%;
+  }
+
+  .container-h2 {
+    font-size: 27px;
+  }
+
+  .main-section-p-1 {
+    padding: 14px 2px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .main-section-p {
+    margin: 0;
+  }
+  .main-section-p-2 {
+    padding: 14px 2px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .main-section-p-3 {
+    padding: 14px 2px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+/***************************/
+/* BELOW 544px (Phone) */
+/***************************/
+
+@media (max-width: 574px) {
+  .font-h1 {
+    font-size: 24px;
+    margin-bottom: 150px;
+  }
+
+  .header-p {
+    font-size: 14px;
+  }
+  .container-flex {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .container-border-right {
+    border: none;
+  }
+  .container-border-left {
+    border: none;
+  }
+
+  .main-section {
+    flex-wrap: wrap;
+    flex-flow: column;
+  }
+
+  .main-template {
+    margin: auto;
+    width: 70%;
+  }
+
+  .footer-section {
+    flex-flow: column;
+  }
+
+  .footer-div {
+    margin: auto;
+    width: 50%;
+  }
+}
+
+/* ##########################
+    Responsive  End
+########################## */
